@@ -19,6 +19,6 @@ class User(db.Model):
         }
     
 class TokenBlockedList(db.Model):
-    id = db.Column(db.Integer,primary_key = True)
+    id=db.Column(db.Integer, primary_key=True)
     token = db.Column(db.String(1000), unique = True , nullable = False)
     created_at = db.Column(db.DateTime, nullable = False)
